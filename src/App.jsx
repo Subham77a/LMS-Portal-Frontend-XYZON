@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./assets/Home";
-import Login from "./assets/login";
+import Login from "./assets/Login";
 import Dashboard from "./assets/Dashboard";
 import Createac from "./assets/Createac"
-
+import Course from "./assets/Course";
+import MyCourse from "./assets/MyCourse";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/createac" element={<Createac />}></Route>
+        <Route path="/course" element={<Course />}></Route>
+        <Route path="/mycourse" element={<MyCourse/>}></Route>
       </Routes>
   );
 }

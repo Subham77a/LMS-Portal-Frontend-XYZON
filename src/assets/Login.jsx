@@ -22,6 +22,7 @@ function Login(){
       // assuming backend sends plain "yes" or "no"
 
       if (data.message === "yes") {
+        localStorage.setItem("userId", data.userId);
         navigate("/dashboard");
       } else {
         alert("Wrong username or password");
